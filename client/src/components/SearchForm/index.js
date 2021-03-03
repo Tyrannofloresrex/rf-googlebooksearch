@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useRef } from "react";
+import { useStoreContext } from "../../utils/GlobalState";
+
 
 function SearchForm({handleInputChange, query, handleFormSubmit}) {
+  // const search = useRef();
+  // const [state, dispatch] = useStoreContext()
   return (
     <form>
       <div className="form-group">
@@ -13,6 +17,7 @@ function SearchForm({handleInputChange, query, handleFormSubmit}) {
           onChange ={handleInputChange}
           value = {query}
           name = "search"
+          // ref={search}
         />
       </div>
       <button type="submit" class="btn btn-primary" onClick={handleFormSubmit}>
