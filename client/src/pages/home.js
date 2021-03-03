@@ -73,7 +73,7 @@ const Home = (props) => {
               <Jumbotron>
                 title:
                 <h1>{book.volumeInfo.title}</h1>
-                by  <h2>{book.volumeInfo.title}</h2>
+                by  <h2>{book.volumeInfo.authors}</h2>
               </Jumbotron>
               )
             })}
